@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DesktopCal</title>
+<meta name="description" content="바탕화면에 두고 쓰는 한국형 달력 — 음력·공휴일·D-Day·기념일, 구글 캘린더 연결">
+<style>
+  :root { --bg: #f6f8fa; --card: #ffffff; --text: #1f2328; --muted: #59636e; --accent: #1f6feb; --line: #d1d9e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --card: #161b22; --text: #e6edf3; --muted: #9198a1; --accent: #4493f8; --line: #30363d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.7;
+         font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin: 0 0 16px; }
+  h2 { font-size: 18px; margin: 0 0 8px; }
+  ul { margin: 0; padding-left: 20px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DesktopCal</h1>
+  <p class="sub">바탕화면에 두고 쓰는 한국형 달력 — 음력·공휴일·D-Day·기념일, 구글 캘린더 연결</p>
+
+  <section>
+    <h2>무엇을 하나요</h2>
+    <ul>
+      <li>Windows 바탕화면에 늘 떠 있는 달력입니다. 다른 창 뒤에 있어 일을 방해하지 않습니다.</li>
+      <li>날짜마다 음력·절기·공휴일을 함께 보여 줍니다.</li>
+      <li>D-Day 카드와 음력 기념일(생일·기일)을 해마다 알맞은 날짜에 저절로 표시합니다.</li>
+      <li>원하면 내 구글 캘린더와 연결해 다른 기기에서 넣은 일정도 함께 봅니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>구글 캘린더 연결</h2>
+    <p>구글 연결은 사용하는 사람이 <b>자기 구글 계정에서 직접 만든 인증 파일</b>로 합니다.
+      일정은 내 PC의 DesktopCal 과 내 구글 계정 사이에서만 오가며, 개발자나 다른 서버로 보내지지 않습니다.
+      자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 보세요.</p>
+  </section>
+
+  <section>
+    <h2>설치와 사용법</h2>
+    <p>받은 압축 파일(DesktopCal_v….zip)을 풀고 DesktopCal.exe 를 실행하면 됩니다. 설치 프로그램은 없습니다.
+      자세한 사용법은 압축 안의 사용 설명서(manual.html)에 있습니다.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">개인정보처리방침</a> · 문의: <a href="https://github.com/gityauls/desktopcal/issues">GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
